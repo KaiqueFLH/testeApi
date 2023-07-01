@@ -5,11 +5,8 @@ const Usuario = require("./models/usuario");
 function createRoute() {
     routes.post('/usuarios', async (req, res) => {
         console.log("Criado: ", req.body);
-        if(Usuario.req.params!=req.params.id){
             await Usuario.create(req.body);
             res.json();
-        }
-        
     })
 }
 
