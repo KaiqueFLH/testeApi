@@ -13,7 +13,9 @@ const router = require('./routes.js');
 //aplica no nosso app
 app.use(router);
 
-require('./usuarios/controllers/models/usuario')
+require('./usuarios/controllers/models/usuario.js');
+require('./usuarios/controllers/models/cardsPermission.js');
+require('./usuarios/controllers/models/propertyPermission.js');
 
 
 //inicia a porta
